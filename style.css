@@ -676,9 +676,6 @@ img{
     .btn:hover{
       color: var(--white-color);
     }
-    .btn:focus{
-        outline: none;
-    }
     .free-consultation-btn{
         margin-top: 3rem;
     }
