@@ -4,6 +4,7 @@ require("dotenv").config();
 const express = require("express");
 const bodyparser = require("body-parser");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const nodemailer = require("nodemailer");
 
 const app = express();
@@ -11,6 +12,7 @@ const app = express();
 app.use(bodyparser.json());
 app.use(express.static("public"));
 app.use(bodyparser.urlencoded({ extended: true }));
+app.use(cors());
 
 // Environment variables
 const mongoURI = process.env.DATABASE_URI;
