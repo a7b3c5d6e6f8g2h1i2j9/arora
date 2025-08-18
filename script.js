@@ -211,6 +211,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     });
 
     let result = await res.json(); // parse JSON response
+    console.log("Server response:", result);
 
     if (res.ok && result.success) {
       //  redirect only if backend says success

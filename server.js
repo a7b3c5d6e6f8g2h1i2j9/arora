@@ -79,6 +79,9 @@ const transporter = nodemailer.createTransport({
 // });
 
 app.post("/sign_up", async (req, res) => {
+
+    console.log("Received form data:", req.body); 
+
   try {
     const { name, Phone, email, message } = req.body;
 
@@ -88,7 +91,7 @@ app.post("/sign_up", async (req, res) => {
     console.log("Record inserted successfully");
 
     // Respond with JSON (instead of redirect)
-    res.json({ success: true, message: "Form submitted successfully!" });
+    res.status(200).json({ success: true });
 
     // Send emails AFTER responding
     setImmediate(async () => {
