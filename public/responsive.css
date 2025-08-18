@@ -1,0 +1,209 @@
+
+
+
+@media (min-width: 18.75rem){
+    /* 300px / 16px = 18.75rem */
+
+    /* servises */
+    .service-herosection{
+        height: calc(40vh - 60px);
+    }
+    /* courses */
+    .course-hero-section{
+        height: calc(40vh - 60px);
+    }
+    /* form */
+    .fill-form-heading h2{
+        font-size: 3rem;
+    }
+    .contact-inputs{
+        width: 28rem;
+    }
+}
+
+@media (min-width: 22.5rem){
+    /* 360px / 16px = 22.5rem */
+    /* servises */
+    .service-herosection{
+        height: calc(40vh - 60px);
+    }
+    /* courses */
+    .course-hero-section{
+        height: calc(40vh - 60px);
+    }
+    .contact-inputs{
+        width: 33rem;
+    }
+}
+
+@media (min-width: 390px){
+    .service-herosection{
+        height: calc(35vh - 60px);
+    }
+    .course-hero-section{
+        height: calc(35vh - 60px);
+    }
+}
+
+@media (min-width: 28rem){
+    /* 448px / 16px = 28rem */
+    .space{
+        height: calc(88vh - 60px);
+    }
+    .hero-section{
+        height: calc(98vh - 60px);
+    }
+    .advertising-service-gridcontainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .review-image{
+        max-width: 60%;
+    }
+    .footer-navigation{
+        flex-direction: row;
+    }
+    .footerWrapCon-one{
+        gap: 5rem;
+    }
+    /* form */
+    .fill-form-heading h2{
+        font-size: 4rem;
+    }
+    .contact-inputs{
+        width: 40rem;
+    }
+    .fill-form-heading{
+        margin-right: 5rem;
+    }
+}
+
+
+@media (min-width: 44.5rem){
+    /* 712px / 16px = 44.5rem */
+    .space{
+        height: calc(75vh - 60px);
+    }
+    .hero-section{
+        height: calc(75vh - 60px);
+    }
+    .review-image{
+        max-width: 50%;
+    }
+    .free-advertising-strategy-container p{
+        gap: 1rem;
+    }
+    .d-none{
+        display: block;
+    }
+}
+
+@media (min-width: 46rem){
+    /* 736px / 16px = 46rem */
+    .bestInKerala-gridcontainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image-two{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .image-three{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    .advertising-service-gridcontainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .service-herosection{
+        height: calc(38vh - 60px);
+    }
+    .course-hero-section{
+        height: calc(38vh - 60px);
+    }
+}
+
+@media (min-width: 55rem){
+    /* 880px / 16px = 55rem */
+    .service-herosection{
+        height: calc(90vh - 60px);
+    }
+    .course-hero-section{
+        height: calc(90vh - 60px);
+    }
+    /* courses */
+    .course-hero-image{
+        width: 60%;
+        height: auto;
+        margin-top: 7rem;
+    }
+}
+
+@media (min-width: 912px){
+    .space{
+        height: calc(60vh - 60px);
+    }
+    .hero-section{
+        height: calc(60vh - 60px);
+    }
+    .service-herosection{
+        height: calc(40vh - 60px);
+    }.course-hero-section{
+        height: calc(40vh - 60px);
+    }
+    .review-image{
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 61rem){
+    /* 967px / 16px = 16px */
+    .hamburger{
+        display: none;
+    }
+    .navbar-links{
+        display: flex;
+    }
+    .star {
+        width: 1.5px;
+        height: 1.5px;
+    }
+    .navbar-icons{
+        display: flex;
+    }
+}
+
+@media (min-width: 64rem){
+    /* 1024px / 16px = 64.0625rem */
+    .space{
+        height: calc(85vh - 60px);
+    }
+    .hero-section{
+        height: calc(85vh - 60px);
+    }
+    .service-herosection{
+        height: calc(50vh - 60px);
+    }
+    .course-hero-section{
+        height: calc(50vh - 60px);
+    }
+    .review-image{
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 72.5rem){
+    /* 1160px / 16px = 72.5rem */
+    .space{
+        height: calc(100vh - 60px);
+    }
+    .hero-section{
+        height: calc(100vh - 60px);
+    }
+    /* services */
+    .service-herosection{
+        height: calc(100vh - 60px);
+    }
+    .course-hero-section{
+        height: calc(100vh - 60px);
+    }
+}

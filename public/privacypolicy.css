@@ -1,0 +1,171 @@
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.privacycontent-container{
+    margin-top: 10rem;
+}
+.privacy-heading{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.privacycontent-container ul{
+    list-style: disc;
+}
+.privacycontent-container ul li{
+    font-size: 1.6rem;
+    font-size: clamp(1rem, 4vw, 1.6rem);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+.privacycontent-container a{
+    color: var(--blue-color);
+    text-decoration: solid underline var(--blue-color);
+}
+
+.privacycontent-container h2{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.privacy-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+/* INTERPRETATION & DEFINITIONS */
+.Interpretation-definitions{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+.definitionul-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 5rem;
+    padding-left: clamp(1rem, 5vw, 5rem);
+}
+
+/* COMPONENTS */
+.marginbottom{
+    margin-bottom: 1rem;
+}
+
+
+/* COLLECTING AND USING DATA */
+.collecting-usingdata-container{
+    margin-bottom: 5rem;
+}
+.collecting-usingdata{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.collecting-usingdata ul{
+    padding-left: 5rem;
+    padding-left: clamp(1rem, 5vw, 5rem);
+}
+.datausage{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.trackingcookies{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.trackingcookies ul{
+    padding-left: 5rem;
+    padding-left: clamp(1rem, 5vw, 5rem);
+}
+
+.useof-personaldata{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.useof-personaldata ul{
+    padding-left: 5rem;
+    padding-left: clamp(1rem, 5vw, 5rem);
+}
+
+.retentionofdata{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.transferofdata{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;   
+}
+
+.deletepersonaldata{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;      
+}
+
+.disclosureofdata{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+.disclosureofdata-options{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.disclosureofdata-options ul{
+    padding-left: 5rem;
+    padding-left: clamp(1rem, 5vw, 5rem);
+}
+
+.children-privacy{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.linktoother-website{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.changetothis-privacypolicy{
+    margin-bottom: 3rem;
+}
+.changetothis-privacypolicy p{
+    margin-bottom: 1rem;
+}
+
+.contact-us{
+    margin-bottom: 5rem;
+}
+.contact-us p{
+    margin-bottom: 1rem;
+}
+.contact-us ul{
+    padding-left: 5rem;
+    padding-left: clamp(1rem, 5vw, 5rem);
+}
+
