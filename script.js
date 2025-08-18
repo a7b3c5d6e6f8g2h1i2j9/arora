@@ -171,3 +171,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
+//FORM SUBMISSION
+
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault(); // stop default form redirect
+
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData.entries());
+
+  try {
+    let res = await fetch("https://arora-backend.onrender.com/sign_up", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    if(res.ok){
+      window.location.href = "signup_successfull.html";
+    } else {
+      alert("Something went wrong!");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Error connecting to server");
+  }
+});
