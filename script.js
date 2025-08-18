@@ -172,56 +172,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-//FORM SUBMISSION
+document.querySelector("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-// document.getElementById("contactForm").addEventListener("submit", async function(e) {
-//   e.preventDefault(); // stop default form redirect
+  const formData = {
+    name: document.querySelector("#name").value,
+    Phone: document.querySelector("#phone").value,
+    email: document.querySelector("#email").value,
+    message: document.querySelector("#message").value
+  };
 
-//   const formData = new FormData(this);
-//   const data = Object.fromEntries(formData.entries());
+  const response = await fetch("https://arora-backend.onrender.com/sign_up", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData)
+  });
 
-//   try {
-//     let res = await fetch("https://arora-backend.onrender.com/sign_up", {
-//       method: "POST",
-//       headers: { "Content-Type": "application/json" },
-//       body: JSON.stringify(data)
-//     });
-
-//     if(res.ok){
-//       window.location.href = "signup_successfull.html";
-//     } else {
-//       alert("Something went wrong!");
-//     }
-//   } catch (err) {
-//     console.error(err);
-//     alert("Error connecting to server");
-//   }
-// });
-document.getElementById("contactForm").addEventListener("submit", async function(e) {
-  e.preventDefault(); // stop default form redirect
-
-  const formData = new FormData(this);
-  const data = Object.fromEntries(formData.entries());
-
-  try {
-    let res = await fetch("https://arora-backend.onrender.com/sign_up", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-
-    let result = await res.json(); // parse JSON response
-    console.log("Server response:", result);
-
-    if (res.ok && result.success) {
-      //  redirect only if backend says success
-      window.location.href = "signup_successfull.html";
-    } else {
-      alert("❌ " + (result.message || "Something went wrong!"));
-    }
-  } catch (err) {
-    console.error(err);
-    alert(" Error connecting to server");
+  const result = await response.json();
+  if (result.success) {
+    window.location.href = "/signup_successfull.html"; // redirect client-side
+  } else {
+    alert("Error: " + result.message);
   }
 });
+
 
