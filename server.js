@@ -44,7 +44,14 @@ app.post("/sign_up", async (req, res) => {
         console.log("Record inserted successfully");
 
         // Respond to user immediately
-        res.redirect("/signup_successfull.html");
+        // res.redirect("/signup_successfull.html");
+        res.json({ success: true, message: "Form submitted successfully!" });
+
+            } catch (err) {
+                console.error("Error during signup:", err);
+                res.status(500).json({ success: false, message: "Something went wrong" });
+            }
+            
 
         // Send emails AFTER responding
         setImmediate(async () => {
