@@ -170,6 +170,12 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const path = require("path");
+const corsOptions = {
+  origin: "*", // allow all domains (you can restrict to your GitHub Pages URL later)
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
+};
+
 
 const app = express();
 
@@ -177,7 +183,9 @@ app.use(bodyparser.json());
 // serve static files from the root folder
 app.use(express.static(path.join(__dirname)));
 app.use(bodyparser.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({ origin: "*" }));
+app.use(cors(corsOptions));
+
 
 // Environment variables
 const mongoURI = process.env.DATABASE_URI;
