@@ -172,7 +172,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-document.querySelector("form").addEventListener("submit", async (e) => {
+document.querySelector("#myForm").addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const formData = {
