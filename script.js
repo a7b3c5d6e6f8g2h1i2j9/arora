@@ -176,10 +176,10 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const formData = {
-    name: document.getElementById("#name").value,
-    Phone: document.getElementById("#phone").value,
-    email: document.getElementById("#email").value,
-    message: document.getElementById("#message").value
+    name: document.querySelector("#name").value,
+    Phone: document.querySelector("#phone").value,
+    email: document.querySelector("#email").value,
+    message: document.querySelector("#message").value
   };
 
   const response = await fetch("https://arora-backend.onrender.com/sign_up", {
