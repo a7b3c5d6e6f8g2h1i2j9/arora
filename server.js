@@ -44,7 +44,7 @@ const transporter = nodemailer.createTransport({
     pass: EMAIL_PASS
   }
 });
-
+app.use(express.json());
 // Routes
 app.post("/sign_up", async (req, res) => {
   try {
