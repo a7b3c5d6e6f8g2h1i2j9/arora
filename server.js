@@ -24,10 +24,13 @@ const EMAIL_USER = process.env.EMAIL_USER;
 const EMAIL_PASS = process.env.EMAIL_PASS;
 
 // Connect MongoDB
-mongoose
-  .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log(" Connected to database"))
-  .catch((err) => console.error(" Error in connecting to database:", err));
+mongoose.connect(mongoURI)
+  .then(() => {
+    console.log(" Connected to database");
+  })
+  .catch((err) => {
+    console.error(" Error in connecting to database:", err);
+  });
 
 // Schema + Model
 const userSchema = new mongoose.Schema({
