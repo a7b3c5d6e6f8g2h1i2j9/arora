@@ -29,7 +29,7 @@ html {
     animation: hero-animation 0.6s ease forwards;
     color: var(--white-color);
     text-shadow: 1px 1px 1px var(--blue-color);
-    background-color: rgba(0,0,0,0.3);
+/*     background-color: rgba(0,0,0,0.3); */
 }
 
 /* Y CHOOSE OUR DIGITAL MARKETING COURCE */
