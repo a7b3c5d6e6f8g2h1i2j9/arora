@@ -46,7 +46,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Routes
-app.post("https://arora-backend.onrender.com/sign_up", async (req, res) => {
+app.post("/sign_up", async (req, res) => {
   try {
     const { name, Phone, email, message } = req.body;
 
