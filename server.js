@@ -46,7 +46,7 @@ const transporter = nodemailer.createTransport({
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("🚀 Backend is running!");
+  res.send(" Backend is running!");
 });
 
 app.post("/sign_up", async (req, res) => {
@@ -86,7 +86,7 @@ app.post("/sign_up", async (req, res) => {
       }
     });
   } catch (err) {
-    console.error("❌ Error during signup:", err);
+    console.error(" Error during signup:", err);
     res.status(500).json({ success: false, message: "Something went wrong." });
   }
 });
