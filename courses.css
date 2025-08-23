@@ -27,8 +27,7 @@ html {
     transform: translateY(30px);
     -webkit-animation: hero-animation 0.6s ease forwards;
     animation: hero-animation 0.6s ease forwards;
-    color: rgba(0,0,0,0.3);
-/*     color: var(--white-color); */
+    color: var(--white-color);
     text-shadow: 1px 1px 1px var(--blue-color);
 }
 
