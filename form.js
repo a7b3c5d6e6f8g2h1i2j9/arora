@@ -17,7 +17,7 @@ document.querySelector("#myForm").addEventListener("submit", async (e) => {
 
   const result = await response.json();
   if (result.success) {
-    window.location.href = "/signup_successfull.html"; // redirect client-side
+    window.location.href = "https://a7b3c5d6e6f8g2h1i2j9.github.io/arora/signup_successfull.html"; // redirect client-side
   } else {
     alert("Error: " + result.message);
   }
