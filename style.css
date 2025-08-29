@@ -143,9 +143,6 @@ a{
     color:var(--white-color);
     display: inline-block;
 }
-a:focus {
-    outline: none;
-}
 h1{
     line-height: 1.2;
     font-weight: 700;
