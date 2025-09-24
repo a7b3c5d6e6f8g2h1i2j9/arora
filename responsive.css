@@ -201,7 +201,10 @@
     }
     /* services */
     .service-herosection{
-        height: calc(100vh - 60px);
+        /* height: calc(100vh - 60px); */
+        height: calc(95vh - 60px);
+        width: 85%;
+        margin:75px auto;
     }
     .course-hero-section{
         height: calc(95vh - 60px);
