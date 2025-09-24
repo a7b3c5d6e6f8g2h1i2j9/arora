@@ -59,6 +59,9 @@
     .review-image{
         max-width: 60%;
     }
+    .footer-section {
+        margin-top: 8rem;
+    }
     .footer-navigation{
         flex-direction: row;
     }
@@ -112,7 +115,8 @@
         grid-column: 1/2;
     }
     .advertising-service-gridcontainer{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
     }
     .service-herosection{
         height: calc(38vh - 60px);
@@ -169,6 +173,10 @@
     }
     .navbar-icons{
         display: flex;
+    }
+    .footer-social-icon-lap {
+        width: 4rem;
+        height: auto;
     }
 }
 
