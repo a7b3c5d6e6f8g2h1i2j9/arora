@@ -10,7 +10,7 @@ html {
     margin-top: 10rem;
     background-image: url('images/webhero-course-image.png');
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
